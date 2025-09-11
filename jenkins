@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                
+                git branch: 'main', url: 'https://github.com/Mayuresh4398/TE7.git'
             }
         }
         stage('compile') {
             steps {
-                'javac helloworld.java'
+                bat'javac helloworld.java'
             }
         }
         stage('run') {
             steps {
-                 'java helloworld'
+                 bat'java helloworld'
             }
         }
     }
