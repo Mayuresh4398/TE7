@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                git branch: 'main', credentialsId: '9b4f9acb-b310-49e7-91ea-fe377ea53d38', url: 'https://github.com/Mayuresh4398/TE7.git'
+               git branch: 'main', credentialsId: '9b4f9acb-b310-49e7-91ea-fe377ea53d38', url: 'https://github.com/Mayuresh4398/TE7.git'
             }
         }
         stage('compile') {
