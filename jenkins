@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('clone') {
+            steps {
+                
+            }
+        }
+        stage('compile') {
+            steps {
+                'javac helloworld.java'
+            }
+        }
+        stage('run') {
+            steps {
+                 'java helloworld'
+            }
+        }
+    }
+}
